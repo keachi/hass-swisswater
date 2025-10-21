@@ -5,12 +5,11 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any
 
 from homeassistant.exceptions import ConfigEntryAuthFailed
-from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
+from homeassistant.helpers.update_coordinator import (DataUpdateCoordinator,
+                                                      UpdateFailed)
 
-from .api import (
-    SwissWaterApiClientAuthenticationError,
-    SwissWaterApiClientError,
-)
+from .api import (SwissWaterApiClientAuthenticationError,
+                  SwissWaterApiClientError)
 
 if TYPE_CHECKING:
     from .data import SwissWaterConfigEntry
